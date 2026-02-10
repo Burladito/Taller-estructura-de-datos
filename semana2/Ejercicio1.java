@@ -19,5 +19,7 @@ public class Ejercicio1 {
         }
         System.out.println("Suma de pares: " + sumapar);
         System.out.println("Suma de impares: " + sumaimpar);
+        // Forma 2-> Declarar el arreglo y definiedno su tamaño
+        int[] b = new int[10];
     }
 }
