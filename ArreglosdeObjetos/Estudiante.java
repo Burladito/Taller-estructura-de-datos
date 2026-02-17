@@ -15,7 +15,8 @@ public class Estudiante {
         this.notaPromedio = notaPromedio;
         this.edad = edad;
     }
-
+    public Estudiante() {
+    }
     public String getNombre() {
         return nombre;
     }

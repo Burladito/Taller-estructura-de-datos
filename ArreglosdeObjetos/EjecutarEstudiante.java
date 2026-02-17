@@ -18,6 +18,13 @@ public class EjecutarEstudiante {
         for (int i = 0; i < est.length; i++) {
             sumaNotas += est[i].getNotaPromedio();
         }
-        System.out.println(sumaNotas/est.length);
+        System.out.println(sumaNotas/est.length)
+        
+        // Uso del metodo calcularEdadPromedio
+        int[] edades = new int[est.length];
+        for (int i = 0; i < edades.length; i++) {
+            edades[i] = est[i].getEdad();
+        }
+        ;
     }
 }
