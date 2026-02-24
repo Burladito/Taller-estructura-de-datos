@@ -43,7 +43,7 @@ public class EjecutarEstudiante {
         
         int semestreBuscado = 4;
 
-System.out.println("\nEstudiantes del semestre " + semestreBuscado + ":");
+System.out.println("Estudiantes del semestre " + semestreBuscado + ":");
 
 for (int i = 0; i < est.length; i++) {
     if (est[i].getSemestre() == semestreBuscado) {
