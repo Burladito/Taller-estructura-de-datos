@@ -8,15 +8,15 @@ public class EjecutarEstudiante {
         //Arreglo de Objetos
         Estudiante[] est = new Estudiante[10];
  
-        est[0] = new Estudiante("Juan", 3, "Ingeniería de Sistemas", 3.8, 20);
-        est[1] = new Estudiante("Miguel", 4, "Ingeniería de Sistemas", 4.2, 19);
-        est[2] = new Estudiante("Armando", 3, "Ingeniería de Sistemas", 3.0, 21);
-        est[3] = new Estudiante("Milena", 3, "Ingeniería de Sistemas", 4.5, 20);
-        est[4] = new Estudiante("Sofia", 4, "Ingeniería de Sistemas", 3.9, 19);
+        est[0] = new Estudiante("Juan", 3, "Ingeniería Mecatronica", 3.8, 20);
+        est[1] = new Estudiante("Miguel", 4, "Ingeniería Industrial", 4.2, 19);
+        est[2] = new Estudiante("Armando", 3, "Ingeniería de Software", 3.0, 21);
+        est[3] = new Estudiante("Milena", 3, "Ingeniería Civil", 4.5, 20);
+        est[4] = new Estudiante("Sofia", 4, "Abogada", 3.9, 19);
         est[5] = new Estudiante("Camila", 3, "Ingeniería de Sistemas", 4.0, 20);
         est[6] = new Estudiante("Valentina", 4, "Ingeniería de Sistemas", 3.7, 21);
         est[7] = new Estudiante("Andres", 3, "Ingeniería de Sistemas", 4.1, 20);
-        est[8] = new Estudiante("Santiago", 4, "Ingeniería de Sistemas", 3.6, 19);
+        est[8] = new Estudiante("Santiago", 4, "mecanica", 3.6, 19);
         est[9] = new Estudiante("Camilo", 3, "Ingeniería de Sistemas", 4.3, 20);    
         
         System.out.println(est[2]);
@@ -26,7 +26,7 @@ public class EjecutarEstudiante {
         }
  
         //Promedio general de las notas de los estudiantes
-        double sumaNota = 0.0;
+        double sumaNota = 0.0; 
         for (int i = 0; i < est.length; i++) {
             sumaNota += est[i].getNotaPromedio();        
         }
@@ -40,7 +40,19 @@ public class EjecutarEstudiante {
  
         //Uso del método calcularEdadPromedio
         System.out.println(objE.calcularEdadPromedio(edades));
+        int semestreBuscado = 3;
+String carreraBuscada = "Ingeniería de Sistemas";
+
+System.out.println("\nEstudiantes filtrados:");
+for (int i = 0; i < est.length; i++) {
+    if (est[i].getSemestre() == semestreBuscado &&
+        est[i].getPrograma().equals(carreraBuscada)) {
         
+        System.out.println(est[i].getNombre() + 
+                           " --> Semestre: " + est[i].getSemestre() +
+                           " --> Carrera: " + est[i].getPrograma());
+    }
+}
        
     }    
 }
