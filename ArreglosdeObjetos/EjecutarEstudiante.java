@@ -16,7 +16,7 @@ public class EjecutarEstudiante {
         est[5] = new Estudiante("Camila", 3, "Ingeniería de Sistemas", 4.0, 20);
         est[6] = new Estudiante("Valentina", 4, "Ingeniería de Sistemas", 3.7, 21);
         est[7] = new Estudiante("Andres", 3, "Ingeniería de Sistemas", 4.1, 20);
-        est[8] = new Estudiante("Santiago", 4, "mecanica", 3.6, 19);
+        est[8] = new Estudiante("Santiago", 4, "Ingeniería de Sistemas", 3.6, 19);
         est[9] = new Estudiante("Camilo", 3, "Ingeniería de Sistemas", 4.3, 20);    
         
         System.out.println(est[2]);
@@ -40,20 +40,16 @@ public class EjecutarEstudiante {
  
         //Uso del método calcularEdadPromedio
         System.out.println(objE.calcularEdadPromedio(edades));
-        int semestreBuscado = 3;
-String carreraBuscada = "Ingeniería de Sistemas";
-
-System.out.println("\nEstudiantes filtrados:");
-for (int i = 0; i < est.length; i++) {
-    if (est[i].getSemestre() == semestreBuscado &&
-        est[i].getPrograma().equals(carreraBuscada)) {
         
-        System.out.println(est[i].getNombre() + 
-                           " --> Semestre: " + est[i].getSemestre() +
+        int semestreBuscado = 4;
+
+System.out.println("\nEstudiantes del semestre " + semestreBuscado + ":");
+
+for (int i = 0; i < est.length; i++) {
+    if (est[i].getSemestre() == semestreBuscado) {
+        System.out.println("Nombre: " + est[i].getNombre() +
                            " --> Carrera: " + est[i].getPrograma());
     }
+}    
 }
-       
-    }    
 }
- 
