@@ -48,8 +48,7 @@ public class EjecutarEstudiante {
 
         for (int i = 0; i < est.length; i++) {
             if (est[i].getSemestre() == semestreBuscado) {
-                System.out.println("Nombre: " + est[i].getNombre() +
-                        " --> Carrera: " + est[i].getPrograma());
+                System.out.println("Nombre: " + est[i].getNombre() + " --> Carrera: " + est[i].getPrograma());
             }
         }
     }
